@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMPOSTERS | Official Band Website</title>
+  <meta name="description" content="IMPOSTERS — official band website. Music, shows, members and contact." />
+  <meta name="theme-color" content="#000000" />
+  <meta property="og:title" content="IMPOSTERS" />
+  <meta property="og:description" content="Official band website. Music, shows, members and contact." />
+  <meta property="og:image" content="assets/logo.png" />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__brand" aria-label="IMPOSTERS home">
+      <span class="brand-text">IMPOSTERS</span>
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#shows">Shows</a>
+      <a href="#members">Members</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact" class="btn btn--small">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__glow"></div>
+    <div class="hero__inner">
+      <!-- Logo: put your logo at assets/logo.png. If missing, text fallback shows. -->
+      <img src="assets/logo.png" alt="IMPOSTERS band logo" class="hero__logo" id="heroLogo" />
+      <h1 class="hero__fallback" id="heroFallback">IMPOSTERS</h1>
+      <p class="hero__tagline">Raw. Loud. Unapologetic.</p>
+      <div class="hero__cta">
+        <a href="#music" class="btn">Listen Now</a>
+        <a href="#shows" class="btn btn--ghost">Upcoming Shows</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title">About <span>Us</span></h2>
+      <div class="about">
+        <p class="about__text">
+          IMPOSTERS is a band built on energy, noise and honesty. Write your band story here —
+          when you started, what you play, what inspires you and what the audience can expect
+          at your shows.
+        </p>
+        <ul class="stats">
+          <li><strong data-count="2024">0</strong><span>Formed</span></li>
+          <li><strong data-count="12">0</strong><span>Original Songs</span></li>
+          <li><strong data-count="25">0</strong><span>Live Shows</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MUSIC -->
+  <section class="section section--alt" id="music">
+    <div class="container">
+      <h2 class="section__title">Our <span>Music</span></h2>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__cover">IMP</div>
+          <h3>Song Title One</h3>
+          <p>Single &middot; 2025</p>
+          <a href="#" class="link" target="_blank" rel="noopener">Listen &rarr;</a>
+        </article>
+        <article class="card">
+          <div class="card__cover">IMP</div>
+          <h3>Song Title Two</h3>
+          <p>Single &middot; 2025</p>
+          <a href="#" class="link" target="_blank" rel="noopener">Listen &rarr;</a>
+        </article>
+        <article class="card">
+          <div class="card__cover">IMP</div>
+          <h3>Album / EP Name</h3>
+          <p>EP &middot; 2026</p>
+          <a href="#" class="link" target="_blank" rel="noopener">Listen &rarr;</a>
+        </article>
+      </div>
+
+      <div class="embed">
+        <!-- Replace the src below with your own YouTube / Spotify embed link -->
+        <iframe
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="IMPOSTERS featured video"
+          loading="lazy"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWS -->
+  <section class="section" id="shows">
+    <div class="container">
+      <h2 class="section__title">Upcoming <span>Shows</span></h2>
+      <ul class="shows">
+        <li class="show">
+          <div class="show__date"><b>15</b><span>NOV</span></div>
+          <div class="show__info"><h3>Venue Name</h3><p>Dhaka, Bangladesh</p></div>
+          <a href="#" class="btn btn--small">Tickets</a>
+        </li>
+        <li class="show">
+          <div class="show__date"><b>06</b><span>DEC</span></div>
+          <div class="show__info"><h3>Venue Name</h3><p>Chattogram, Bangladesh</p></div>
+          <a href="#" class="btn btn--small">Tickets</a>
+        </li>
+        <li class="show">
+          <div class="show__date"><b>20</b><span>DEC</span></div>
+          <div class="show__info"><h3>Venue Name</h3><p>Sylhet, Bangladesh</p></div>
+          <a href="#" class="btn btn--small btn--ghost">Sold Out</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- MEMBERS -->
+  <section class="section section--alt" id="members">
+    <div class="container">
+      <h2 class="section__title">The <span>Band</span></h2>
+      <div class="cards cards--members">
+        <article class="member">
+          <div class="member__photo">V</div>
+          <h3>Member Name</h3><p>Vocals</p>
+        </article>
+        <article class="member">
+          <div class="member__photo">G</div>
+          <h3>Member Name</h3><p>Guitar</p>
+        </article>
+        <article class="member">
+          <div class="member__photo">B</div>
+          <h3>Member Name</h3><p>Bass</p>
+        </article>
+        <article class="member">
+          <div class="member__photo">D</div>
+          <h3>Member Name</h3><p>Drums</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2 class="section__title">Photo <span>Gallery</span></h2>
+      <!-- Add your photos in assets/ and replace the placeholders:
+           <img src="assets/photo1.jpg" alt="..."> -->
+      <div class="gallery">
+        <div class="gallery__item">Photo 1</div>
+        <div class="gallery__item">Photo 2</div>
+        <div class="gallery__item">Photo 3</div>
+        <div class="gallery__item">Photo 4</div>
+        <div class="gallery__item">Photo 5</div>
+        <div class="gallery__item">Photo 6</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="container contact">
+      <h2 class="section__title">Get In <span>Touch</span></h2>
+      <p class="contact__text">Bookings, collabs or just want to say hi? Drop us a message.</p>
+
+      <!-- Form works via mailto, no backend needed. Change the email in script.js -->
+      <form class="form" id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="socials">
+        <a href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://open.spotify.com/" target="_blank" rel="noopener">Spotify</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> IMPOSTERS. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
